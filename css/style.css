@@ -1,0 +1,242 @@
+﻿html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+* {
+    /*border:1px solid green;*/
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Century Gothic', 'Verdaba', 'Poiret One', sans-serif;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+    nav ul li a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+        nav ul li a:hover {
+            text-decoration: none;
+            color: #383636;
+        }
+
+    nav ul li {
+        /*Alterar nav para horizontal*/
+        display: inline-block;
+        font-size: 100%;
+        font-family: 'Century Gothic', 'Verdaba', 'Poiret One', sans-serif;
+        text-align: center;
+        width: 100px;
+        height: 100%;
+    }
+
+.container {
+    margin: 0 auto; /*Centralizar divs*/
+    max-width: 1024px;
+}
+
+section.page-section {
+    /*padding:40px; Todos 4
+    padding:40px 0; Cima/Baixo Esquerda?Direita
+    padding:40px 0 0; Cima Esquerda/Direita Baixo
+    padding:40px 0 0 0; Cima Direita Baixo Esquerda*/
+    padding: 40px 0; /*A ultima instrução conflitante sobrescreve as anteriores*/
+    min-height: 100vh;
+}
+
+
+#contato {
+    background-color: white;
+    padding:0px;
+}
+
+.bgIntro {
+    background-image: url("/img/dev_wallpaper_7.png");
+    /*background-color: #0a5cef;*/
+}
+
+.bgSobre {
+    background-image: url("/img/dev_wallpaper_6.png");
+    /*background-color: #0a5cef;*/
+}
+.bgContato {
+    background-image: url("/img/dev_wallpaper_8.png");        
+}
+
+/*.bgIntro, .bgSobre, .bgPort {*/
+.bgIntro, .bgSobre, .bgContato {
+    /*opacity: 0.8;*/
+    background-color: rgba(0, 0, 0, 0);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    height: 100%;
+    padding-top: 40px;
+}
+.bgContato {
+    opacity: 0.8;   
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    height: 300px;
+    
+}
+
+.conteudoPort figcaption, .conteudoPort p {
+    font-family: 'Century Gothic', 'Verdaba', 'Poiret One', sans-serif;
+    color: black;
+    margin-left: 5%;
+}
+
+.conteudoPort img {
+    margin-left: 5%;
+    margin-top: 5px;
+    width: 80vw;
+    max-width: 90%;
+    height: 30vw;
+    min-height: 40vw;
+    max-height: 300px;
+    border-radius: 10px 10px 10px 10px;
+    border-color: white;
+    /*border-style: ridge;*/
+}
+
+#meunome {
+    /*background-color: rgba(0, 0, 0, 0.1);*/
+    font-weight: bold;
+    color: white;
+    text-shadow: dimgrey 0.1em 0.1em 0.1em;
+    font-size: 4.0vw;
+    text-align: center;
+}
+.sub-titulo {
+    font-family: 'Century Gothic', 'Verdaba', 'Poiret One', sans-serif;
+    font-weight: bold;
+    color: black;    
+    text-shadow: dimgrey 0.01em 0.01em 0.01em;
+    font-size: 3vw;
+    text-align: center;
+}
+#contato .bgContato .container div .sub-titulo {
+    color:white;
+}
+
+#servico {
+    /*background-color: rgba(0, 0, 0, 0.1);*/
+    color: white;
+    margin-left: 50%;
+    font-size: 1.5vw;
+    position: relative;
+    text-align: center, right;
+}
+
+#topo .container header nav ul {
+    position: fixed;
+    z-index: 1;
+    height: auto;
+}
+#rodape div footer nav ul {
+    position:relative;    
+}
+#topo div header nav ul, #rodape div footer nav ul {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.dvSeparation {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 5px;
+}
+.img_me {
+    position: 1px fixed;
+    border-radius: 75%;
+    border-color: transparent;
+    width: 200px;
+    height: 200px;
+    background-position: center;
+    background-size: 100%;
+    background-image: url("/img/eu.png");
+}
+.img_me:hover {
+    -webkit-filter: blur(1px); /* Chrome, Safari, Opera */
+    filter: blur(1px);    
+}
+
+
+#sobre .container .conteudoAbout{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+#sobre .container div .sub-titulo {
+    color:white;
+    text-shadow: dimgrey 0.1em 0.1em 0.1em;
+    /*background-color: rgba(0, 0, 0, 0.1);*/
+}
+
+.justify {
+    color: white;
+    padding: 10px;
+    text-align: justify;
+    word-wrap: break-word;
+}
+#contato .container {
+    margin-top:20px;
+}
+#contato .redesSociais img {    
+    width: 120px;
+    height: 100px;
+    padding:10px;
+    background-position: center;
+    
+}
+
+#contato .redesSociais {
+    padding:10px;
+    display: inline-block;
+}
+#contato .redesSociais img {
+    width: 10vw;
+    height:10vw;
+}
+
+.dadosContato #mail:before {
+    content:  "\f003";
+}
+.dadosContato #phone:before {
+    content:  "\f098";
+}
+.dadosContato #location:before {
+    content:  "\f041";
+}
+.dadosContato i:before {        
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+/*--adjust as necessary--*/
+    color: #000;
+    font-size: 18px;
+    padding: 0.5em;
+    top: 10px;
+    left: 0;
+}   

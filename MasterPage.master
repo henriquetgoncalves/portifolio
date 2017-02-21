@@ -1,0 +1,68 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="fonts/font-awesome-4.6.3/css/font-awesome.min.css">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <section id="topo">
+        <div class="container">
+            <header>
+                <nav>
+                    <ul>
+                        <li>
+                            <a class="bar" href="#intro">Home</a>
+                        </li>
+                        <li>
+                            <a class="bar" href="#sobre">Sobre</a>
+                        </li>
+                        <li>
+                            <a class="bar" href="#portfolio">Portifolio</a>
+                        </li>
+                        <li>
+                            <a class="bar" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+    </section>
+
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+
+    <%--<form id="form1" runat="server">
+    <div>
+    </div>
+    </form>--%>
+    <section id="rodape">
+        <div class="container">
+            <footer>
+                <nav>
+                    <ul>
+                        <li>
+                            <a class="bar" href="#intro">Home</a>
+                        </li>
+                        <li>
+                            <a class="bar" href="#sobre">Sobre</a>
+                        </li>
+                        <li>
+                            <a class="bar" href="#portfolio">Portifolio</a>
+                        </li>
+                        <li>
+                            <a class="bar" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+            </footer>
+        </div>
+    </section>    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
