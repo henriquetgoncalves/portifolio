@@ -1,5 +1,7 @@
 # Henrique Gonçalves Portfolio
 
+[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/henriquetgoncalves/portifolio)
+
 A Next.js + Tailwind CSS portfolio showcasing Henrique's projects, blog and interests. Bilingual (Português/English).
 
 ## Install
